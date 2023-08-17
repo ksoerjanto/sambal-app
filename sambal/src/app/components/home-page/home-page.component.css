@@ -1,0 +1,55 @@
+#checkerboard {
+    display: flex;
+    background-image: url(../../../assets/checkerboard.png);
+    background-size: cover;
+    border: 4px solid white;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 90vw;
+    height: 80vh;
+}
+
+a {
+    height: fit-content;
+}
+
+.picnic-item {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+}
+
+#cake {
+    align-items: end;
+}
+
+#cake img {
+    width: 275px;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+}
+
+#pizza {
+    align-items: end;
+}
+
+#pizza img {
+    width: 300px;
+    margin-bottom: 4vh;
+}
+
+#lemonade img {
+    width: 300px;
+    margin-top: 10vh;
+}
+
+#fruits img {
+    width: 200px;
+    margin-right: 2vh;
+    margin-top: 4vw;
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+

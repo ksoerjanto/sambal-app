@@ -1,0 +1,19 @@
+<div *ngIf="!recipe">
+    Recipe not found
+</div>
+
+<div *ngIf="recipe">
+    <div class="content-box">
+        <a routerLink="/home">
+            <button>Back</button>
+        </a>
+        <div class="recipe-name">
+            {{recipe.name}}
+        </div>
+        <div class="recipe-ingredients">
+            {{recipe.ingredients}}
+        </div>
+        <div class="recipe-img"></div>
+    </div>
+</div>
+

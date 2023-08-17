@@ -1,0 +1,18 @@
+<div id="page-wrap">
+  <div id="left-container">
+    <div *ngFor="let daisy of daisies">
+      <img class="daisy" src="../assets/daisy.svg" style="top: {{daisy[0]}}px; left: {{daisy[1]}}px; ">
+    </div>
+  </div>
+  <div id="right-container">
+    <div *ngFor="let daisy of daisies">
+      <img class="daisy" src="../assets/daisy.svg" style="top: {{daisy[0]}}px; left: {{daisy[1]}}px; ">
+    </div>
+  </div>
+  <div id="max-width-column">
+    <app-nav-bar></app-nav-bar>
+  </div>
+  <div id="content-wrap">
+    <router-outlet></router-outlet>
+  </div>
+</div>

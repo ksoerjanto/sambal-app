@@ -1,0 +1,6 @@
+<div *ngIf="!isLoading">
+    <app-recipes-page *ngIf="!isLoading" [recipes]="recipes"></app-recipes-page>
+</div>
+<div *ngIf="isLoading">
+    Loading...
+</div>

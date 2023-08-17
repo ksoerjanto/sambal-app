@@ -1,0 +1,30 @@
+<form (ngSubmit)="onButtonClicked()">
+    <div>
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" [(ngModel)]="name">
+    </div>
+    <div>
+        <label for="description">Description:</label>
+        <input id="description" name="description" type="text" [(ngModel)]="description">
+    </div>
+    <div>
+        <label for="imgUrl">Image URL:</label>
+        <input id="imgUrl" name="imgUrl" type="text" [(ngModel)]="imgUrl">
+    </div>
+    <div>
+        <label for="category">Category:</label>
+        <select id="category" name="category" [(ngModel)]="category">
+            <option value='' disabled selected>Category</option>
+            <option *ngFor="let name of enumKeys" [value]="name"> {{[name]}} </option>
+        </select>
+    </div>
+    <div>
+        <label for="ingredients">Ingredients:</label>
+        <textarea id="ingredients" name="ingredients" type="text" [(ngModel)]="ingredients" rows="20"></textarea>
+    </div>
+    <div>
+        <label for="directions">Directions:</label>
+        <textarea id="directions" name="directions" type="text" [(ngModel)]="directions" rows="20"></textarea>
+    </div>
+    <button type="submit">{{buttonText}}</button>
+</form>

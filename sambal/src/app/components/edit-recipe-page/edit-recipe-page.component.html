@@ -1,0 +1,16 @@
+<div class="content-box" *ngIf="recipe">
+    <h2>Edit Listing</h2>
+    <app-recipe-data-form
+        buttonText="Save Changes"
+        [currentName]="recipe.name"
+        [currentDescription]="recipe.description"
+        [currentImgUrl]="recipe.imgUrl"
+        [currentCategory]="recipe.category"
+        [currentIngredients]="recipe.ingredients"
+        [currentDirections]="recipe.directions"
+        (onSubmit)="onSubmit($event)">
+    </app-recipe-data-form>
+</div>
+<div class="content-box" *ngIf="!recipe">
+    <h3>Loading...</h3>
+</div>

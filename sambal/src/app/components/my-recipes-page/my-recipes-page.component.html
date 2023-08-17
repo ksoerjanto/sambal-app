@@ -1,0 +1,12 @@
+<a routerLink="/new-recipe">
+    <button>New Listing</button>
+</a>
+<div class="content-box" *ngFor="let recipe of recipes">
+    <h3>{{recipe.name}}</h3>
+    <div class="button-container">
+        <a routerLink="/edit-recipe/{{recipe.id}}">
+            <button>Edit</button>
+        </a>
+        <button (click)="onDeleteClicked(recipe.id)">Delete</button>
+    </div>
+</div>

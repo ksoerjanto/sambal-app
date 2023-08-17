@@ -1,0 +1,9 @@
+runtime: node.js
+env: flex
+beta_settings:
+  # cloud_sql_instances:
+env_variables:
+  DB_USER: hapi-server
+  DB_PASS: 'sambalmatah'
+  DB_NAME: 'sambal'
+  DB_SOCKET: /cloudsql/#connection_name

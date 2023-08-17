@@ -1,0 +1,6 @@
+<div *ngIf="recipes">
+    <app-recipes-page [recipes]="recipes"></app-recipes-page>
+</div>
+<div *ngIf="!recipes">
+    Loading...
+</div>

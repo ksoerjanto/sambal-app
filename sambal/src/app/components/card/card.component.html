@@ -1,0 +1,6 @@
+<div *ngIf="recipe" class="card-container" routerLink="/recipes/{{recipe.id}}">
+    <div class="img-container">
+        <img src="{{recipe.imgUrl}}">
+    </div>
+    <div class="name-container">{{recipe.name}}</div>
+</div>
